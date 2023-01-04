@@ -1,13 +1,12 @@
-import "../css/home.css";
 import Button from '@mui/material/Button';
 
-function Home() {
+function About() {
 
     return (
         <>
-            <div className="container-fluid" style={{ padding:'10rem',backgroundColor:'#EAFDFC', height:'40rem'}}>
+            <div className="container-fluid" style={{ padding:'10rem', height:'40rem'}}>
                 <div className="home">
-                    <p>Hi, my name is</p> 
+                    <p>ABOUT PAGE</p> 
                     <h1><b>RICKY SUPRIYANTO</b></h1>
                     <p>I'm interested in website development. Currently I'm  focusing on as front and back-end developer</p>
                 </div>
@@ -26,4 +25,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default About;

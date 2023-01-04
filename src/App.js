@@ -1,17 +1,22 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import Home from "./Page/home";
+import About from "./Page/about";
+import Navbar from "./Page/navbar";
+import { ImportExport } from "@mui/icons-material";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <>
+      <Router>
+        <Navbar/>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
         </Switch>
-      </BrowserRouter>
-    </div>
+      </Router>
+    </>
   );
 }
 
