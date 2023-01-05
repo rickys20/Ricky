@@ -1,0 +1,11 @@
+.footer{
+    height: 4rem;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
+.icon-position{
+    align-items: center;
+    column-gap: 2rem;
+}

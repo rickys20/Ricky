@@ -5,22 +5,14 @@ function Home() {
 
     return (
         <>
-            <div className="container-fluid" style={{ padding:'10rem',backgroundColor:'#EAFDFC', height:'40rem'}}>
+            <div className="container-fluid" style={{ padding:'10rem',backgroundColor:'#82C3EC', height:'37rem'}}>
                 <div className="home">
-                    <p>Hi, my name is</p> 
+                    <h3>Hi, my name is</h3> 
                     <h1><b>RICKY SUPRIYANTO</b></h1>
-                    <p>I'm interested in website development. Currently I'm  focusing on as front and back-end developer</p>
+                    <h3>I'm interested in website development. Currently I'm  focusing on as front and back-end developer</h3>
                 </div>
                 {/* <Button variant="contained" style={{backgroundColor:'#91D8E4'}}> */}
-                <a href="/about">More details</a>    
-                {/* </Button> */}
-                {/* <div className="home-section">
-                        <div className="justify-center">
-                            <h2 className="text-judul" style={{color:'#472183'}}>Sewa & Rental Mobil Terbaik di kawasan Surabaya</h2>
-                            <h6 className="text-judul-desc" style={{color:'#82C3EC'}}>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</h6>
-                            <a href="/posts"><button type="button" className="btn button-green" style={{color:'#F1F6F5'}}>Mulai Sewa Mobil</button></a>
-                        </div>
-                </div> */}
+                <Button variant="outlined" href="/about" style={{color:'#472183', borderColor:'#472183'}}>More Details</Button>
             </div>
         </>
     );
