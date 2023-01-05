@@ -1,4 +1,5 @@
 import "./App.css";
+import { Helmet } from 'react-helmet'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import Home from "./Page/home";
@@ -14,6 +15,9 @@ function App() {
   return (
     <>
       <Router>
+        <Helmet>
+          <title>Ricky Supriyanto</title>
+        </Helmet>
         <Navbar/>
         <Switch>
           <Route exact path="/" component={Home} />
