@@ -32,6 +32,8 @@ function About() {
                             <Button variant="contained" style={{backgroundColor:'white',color:'#472183',margin:'0 1rem 1rem 0'}}> Wordpress </Button>
                             <Button variant="contained" style={{backgroundColor:'white',color:'#472183',margin:'0 1rem 1rem 0'}}> Node Js </Button>
                             <Button variant="contained" style={{backgroundColor:'white',color:'#472183',margin:'0 1rem 1rem 0'}}> Python </Button>
+                            <Button variant="contained" style={{backgroundColor:'white',color:'#472183',margin:'0 1rem 1rem 0'}}> Teamwork </Button>
+                            <Button variant="contained" style={{backgroundColor:'white',color:'#472183',margin:'0 1rem 1rem 0'}}> Leadership </Button>
                         </div>
                     </div>
                 </div>

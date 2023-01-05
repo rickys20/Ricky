@@ -1,7 +1,7 @@
 import "./App.css";
 import { Helmet } from 'react-helmet'
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Page/home";
 import About from "./Page/about";
 import Navbar from "./Page/navbar";
@@ -9,7 +9,6 @@ import Footer from "./Page/footer";
 import Experience from "./Page/experience";
 import Projects from "./Page/projects";
 import Contact from "./Page/contact"
-import { ImportExport } from "@mui/icons-material";
 
 function App() {
   return (

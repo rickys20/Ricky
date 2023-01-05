@@ -1,0 +1,16 @@
+.contact-me{
+    display: flex;
+    justify-content: center;
+    color: #472183
+}
+
+#contact-form label{
+    color: #472183;
+    display: flex;
+    padding-bottom: .5rem;
+    text-align: left;
+}
+
+.errorMessage{
+    color:  #C70039;
+}

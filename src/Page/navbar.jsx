@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
