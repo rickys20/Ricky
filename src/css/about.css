@@ -1,0 +1,27 @@
+.home{
+    text-align: left;
+    align-items: center;
+}
+
+.image-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.desc-profile{
+    padding: 2rem;
+}
+
+.desc-profile h1{
+    color: #F1F6F5
+}
+
+.desc-profile h4{
+    color: #472183;
+    text-align:justify;
+}
+
+.button-skills{
+    padding-top: 2rem;
+}
