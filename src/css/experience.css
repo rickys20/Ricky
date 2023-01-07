@@ -1,0 +1,11 @@
+.experience{
+    height: fit-content;
+    padding: 4rem;
+    background-color:#82C3EC;
+}
+
+.row-experience{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+}

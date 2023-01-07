@@ -1,0 +1,8 @@
+.education{
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    align-items: center;
+    background-color:#82C3EC;
+}

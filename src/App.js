@@ -8,7 +8,8 @@ import Navbar from "./Page/navbar";
 import Footer from "./Page/footer";
 import Experience from "./Page/experience";
 import Projects from "./Page/projects";
-import Contact from "./Page/contact"
+import Contact from "./Page/contact";
+import Education from "./Page/education"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/education" component={Education} />
           <Route path="/experience" component={Experience} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
