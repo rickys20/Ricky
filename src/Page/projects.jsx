@@ -8,12 +8,13 @@ import '../css/projects.css';
 import mgmp from './img/mgmp-jatim.png';
 import siloka from './img/siloka.png';
 import centralai from './img/central-ai-logo.png';
+import uplink from './img/uplink-logo.png';
 
 function Projects() {
 
     return (
         <>
-            <div class="projects">
+            <div class="projects d-flex justify-content-between flex-column flex-lg-row gap-5 px-5 pt-1 pb-1">
                 <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea style={{padding:'1rem', height:'25rem'}}>
                     <CardMedia
@@ -82,6 +83,30 @@ function Projects() {
                 </CardActionArea>
                 <CardActions  style={{display:'flex',justifyContent:'center'}}>
                     <Button size="small"  color="primary" href='https://centralai.id/' style={{color:'#472183'}}>
+                        <b>Detail Website</b>
+                    </Button>
+                </CardActions>
+                </Card>
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea style={{padding:'1rem', height:'25rem'}}>
+                    <CardMedia
+                    component="img"
+                    height='200rem'
+                    src={uplink}
+                    alt="central-ai-logo"
+                    style={{objectFit:'scale-down'}}
+                    />
+                    <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" style={{textAlign:'center'}}>
+                        Uplink.ID
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary" style={{textAlign:'center'}}>
+                        Fullstack Developer ( 2023 )
+                    </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions  style={{display:'flex',justifyContent:'center'}}>
+                    <Button size="small"  color="primary" href='https://uplink.id/' style={{color:'#472183'}}>
                         <b>Detail Website</b>
                     </Button>
                 </CardActions>
