@@ -1,12 +1,4 @@
 .projects{
     /* height: fit-content; */
-    height: 35rem;
-    padding: 4rem;
-    display: flex;
-    justify-content: space-around;
-    /* display: grid; */
-    /* grid-template-columns: auto auto; */
-    row-gap: 2rem;
-    column-gap: 2rem;
     background-color:#82C3EC;
 }
