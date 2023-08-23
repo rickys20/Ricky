@@ -1,27 +1,13 @@
 .navbar {
-    background-color: #FFFFFF;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-  }
-  
-.nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  max-width: 1500px;
+  background-color: #24292d; /* Set your desired background color */
+  border-radius: 6rem; /* Adjust the border-radius to make it rounded */
+  padding: 10px 20px;
+  color: white;
 }
 
 .nav-logo {
   color: #404258;
-  font-family:"hugheid";
+  font-family: "hugheid";
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
@@ -39,7 +25,7 @@
 }
 
 .nav-links {
-  color: #404258;
+  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
@@ -65,12 +51,12 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #82AAE3;
+  background: #82aae3;
 }
 
 .nav-item .active {
-  color: #82AAE3;
-  border: 1px solid #82AAE3;
+  color: #82aae3;
+  border: 1px solid #82aae3;
 }
 
 .nav-icon {

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from './img/logo-ricky.png'
 import { NavLink } from "react-router-dom";
 import "../css/navbar.css";
 
@@ -7,14 +6,13 @@ function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const navbarStyle = {
+    backgroundColor: 'rgba(0, 0, 0, 0.1)', // Adjust the alpha (opacity) value as needed
+  };
+
   return (
     <>
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            <img src={logo} alt="logo"/>
-          </NavLink>
-
+      <nav className="navbar" style={navbarStyle}>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -83,13 +81,9 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
-        </div>
       </nav>
     </>
   );
 }
-
+ 
 export default Navbar;

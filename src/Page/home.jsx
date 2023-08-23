@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <>
-            <div className="container-fluid" style={{ padding:'10rem',backgroundColor:'#82C3EC', height:'37rem'}}>
+            <div className="container-fluid" style={{ padding:'10rem', height:'37rem'}}>
                 <div className="home">
                     <h3>Hi, my name is</h3> 
                     <h1><b>RICKY SUPRIYANTO</b></h1>
