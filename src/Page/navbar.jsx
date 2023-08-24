@@ -7,13 +7,14 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const navbarStyle = {
-    backgroundColor: 'rgba(0, 0, 0, 0.1)', // Adjust the alpha (opacity) value as needed
+    backgroundColor: "#4B56D2", // Adjust the alpha (opacity) value as needed
   };
 
   return (
     <>
-      <nav className="navbar" style={navbarStyle}>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <div className="d-flex justify-content-center align-items-center pt-4">
+        <nav className="navbar w-50  d-flex justify-content-around px-0" style={navbarStyle}>
+          <div className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
                 exact
@@ -80,10 +81,11 @@ function Navbar() {
                 Contact Us
               </NavLink>
             </li>
-          </ul>
-      </nav>
+          </div>
+        </nav>
+      </div>
     </>
   );
 }
- 
+
 export default Navbar;
