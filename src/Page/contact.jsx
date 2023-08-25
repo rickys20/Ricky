@@ -5,7 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import Button from '@mui/material/Button';
 import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
-import '../css/contact.css'
+import '../css/contact.css';
+import Navbar from "./navbar";
 
 const ContactForm = () => {
   const {
@@ -66,6 +67,7 @@ const ContactForm = () => {
 
   return (
     <>
+    <Navbar />
         <div className='ContactForm' style={{height:'37rem', backgroundColor:'#82C3EC', padding:'3rem'}}>
             <div className='contact-me'>
                 <h1>Contact Me</h1>

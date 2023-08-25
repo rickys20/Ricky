@@ -8,11 +8,13 @@ import '../css/experience.css';
 import its from './img/logo-its-biru.png';
 import tdc from './img/tdc.jpg';
 import hmtc from './img/Logo_HMTC.png';
+import Navbar from "./navbar";
 
 function Experience() {
 
     return (
         <>
+        <Navbar />
             <div class="experience">
                 <div class="row row-experience">
                     <Card sx={{ maxWidth: 345 }} style={{paddingBottom:'1rem',paddingTop:'1rem'}}>

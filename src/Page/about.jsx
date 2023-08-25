@@ -1,11 +1,13 @@
 import "../css/about.css";
 import profile from './img/ricky_profile.JPG'
 import Button from '@mui/material/Button';
+import Navbar from "./navbar";
 
 function About() {
 
     return (
         <>
+        <Navbar />
             <div className="container-fluid" style={{ padding:'5rem',backgroundColor:'#82C3EC', height:'37rem'}}>
                 <div className="row">
                     <div className="col-4 image-profile">

@@ -19,7 +19,6 @@ function App() {
           <title>Ricky Supriyanto</title>
         </Helmet>
         <div className="" style={{backgroundColor:'#363E52'}}>
-          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />

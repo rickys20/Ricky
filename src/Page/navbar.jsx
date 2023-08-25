@@ -7,14 +7,14 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const navbarStyle = {
-    backgroundColor: "#4B56D2", // Adjust the alpha (opacity) value as needed
+    backgroundColor: "#111", // Adjust the alpha (opacity) value as needed
   };
 
   return (
     <>
       <div className="d-flex justify-content-center align-items-center pt-4">
-        <nav className="navbar w-50  d-flex justify-content-around px-0" style={navbarStyle}>
-          <div className={click ? "nav-menu active" : "nav-menu"}>
+        <nav className="navbar w-50  d-flex justify-content-around px-0 position-fixed mt-5" style={navbarStyle}>
+          <div className={click ? "nav-menu active gap-2" : "nav-menu gap-2"}>
             <li className="nav-item">
               <NavLink
                 exact

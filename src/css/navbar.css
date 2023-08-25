@@ -36,70 +36,77 @@
 
 .nav-item {
   line-height: 40px;
-  margin-right: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.nav-item:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-item:active {
+  color: #000;
+}
+
+.nav-item:active:after {
+  background: transparent;
+}
+
+.nav-item:hover:before {
+  opacity: 1;
 }
 
 .nav-item:after {
+  z-index: -1;
   content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width 0.7s ease, background-color 0.5s ease;
-}
-
-.nav-item:hover:after {
+  position: absolute;
   width: 100%;
-  background: #82aae3;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  color: #000;
 }
 
-.nav-item .active {
-  color: #82aae3;
-  border: 1px solid #82aae3;
-}
-
-.nav-icon {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-top: 1pxsolid #fff;
-    position: absolute;
-    top: 80px;
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
   }
-
-  .nav-menu.active {
-    background: #1f5156;
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+  50% {
+    background-position: 400% 0;
   }
-  .nav-item .active {
-    color: #ffdd40;
-    border: none;
-  }
-  .nav-links {
-    padding: 1.5rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #ffdd40;
+  100% {
+    background-position: 0 0;
   }
 }

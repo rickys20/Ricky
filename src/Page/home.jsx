@@ -1,10 +1,20 @@
 import "../css/home.css";
 import Button from '@mui/material/Button';
+import Navbar from "./navbar";
+
+// import image 
+import backgroundImage from './img/parallax.jpg'; 
 
 function Home() {
+    const parralaxItem = {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize:'cover'
+      };
 
     return (
         <>
+        <div className="parallax-item" style={parralaxItem}>
+          <Navbar />
             <div className="container-fluid" style={{ padding:'10rem', height:'37rem'}}>
                 <div className="home">
                     <h3>Hi, my name is</h3> 
@@ -14,6 +24,8 @@ function Home() {
                 {/* <Button variant="contained" style={{backgroundColor:'#91D8E4'}}> */}
                 <Button variant="outlined" href="/about" style={{color:'#472183', borderColor:'#472183'}}>More Details</Button>
             </div>
+
+        </div>
         </>
     );
 }

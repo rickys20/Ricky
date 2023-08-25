@@ -7,11 +7,13 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import '../css/education.css';
 import its from './img/its.png';
 import binar from './img/binar.png';
+import Navbar from "./navbar";
 
 function Education() {
 
     return (
         <>
+        <Navbar />
             <div class="education">
                 <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea style={{padding:'1rem', height:'25rem'}}>

@@ -9,11 +9,13 @@ import mgmp from './img/mgmp-jatim.png';
 import siloka from './img/siloka.png';
 import centralai from './img/central-ai-logo.png';
 import uplink from './img/uplink-logo.png';
+import Navbar from "./navbar";
 
 function Projects() {
 
     return (
         <>
+        <Navbar />
             <div className='container-fluid g-0 projects'>
                 <div className='row px-5 gy-2 pb-5 pt-5'>
                     <div className='col-md-4 col-sm-6 col-xs-12'>
