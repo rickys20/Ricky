@@ -10,3 +10,12 @@
 .home h3{
     color: #F1F6F5
 }
+
+.parallax-item:first-child {
+    background: url("../Page/img/parallax.jpg");
+    background-size: cover;
+  }
+
+.paralax-item:nth-child(2) {
+    background: #6d6b62;
+  }

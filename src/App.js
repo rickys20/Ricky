@@ -21,7 +21,6 @@ function App() {
         <div className="" style={{backgroundColor:'#363E52'}}>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
             <Route path="/education" component={Education} />
             <Route path="/experience" component={Experience} />
             <Route path="/projects" component={Projects} />
