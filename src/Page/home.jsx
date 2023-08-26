@@ -1,6 +1,7 @@
 import "../css/home.css";
 import Button from "@mui/material/Button";
 import Navbar from "./navbar";
+import Footer from "./Page/footer";
 import React, { useState, useEffect } from "react";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -224,6 +225,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </>
   );
 }

@@ -26,7 +26,6 @@ function App() {
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
           </Switch>
-          <Footer />
         </div>
       </Router>
     </>
